@@ -5,6 +5,8 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import StarIcon from '@material-ui/icons/Star';
 
 function Header() {
   return (
@@ -17,15 +19,39 @@ function Header() {
       </Link>
 
       <div className="header__center">
-        <input type="text" />
-        <SearchIcon />
+        <div className="header__option header__option--active">
+          Jobs
+        </div>
+        <div className="header__option">
+          Internships
+        </div>
+        <div className="header__option">
+          Volunteer
+        </div>
+        <div className="header__option">
+          Training Programs
+        </div>
+
+       
       </div>
 
       <div className="header__right">
-        <p>For employers</p>
-        <LanguageIcon />
-        <ExpandMoreIcon />
-        <Avatar />
+          <div className="header__right--option">
+          <p>For employers</p>
+          </div>
+          <div className="header__right--option">
+          <NotificationsIcon />
+          </div>
+          <div className="header__right--option">
+          <StarIcon />
+          </div>
+          <div className="header__right--option">
+          <Avatar />
+          </div>
+        
+        
+        
+       
       </div>
     </div>
   );
