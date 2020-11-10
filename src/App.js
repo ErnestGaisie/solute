@@ -3,6 +3,7 @@ import Header from "./components/header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
+import SearchPage from "./components/searchPage/SearchPage"
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <Router>
       <Header />
         <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
           <Route path = "/">
             <Home />
           </Route>

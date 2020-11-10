@@ -1,0 +1,81 @@
+.searchCard {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  max-width: 70%;
+  width: 70%;
+  cursor: pointer;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+.searchCard__block {
+  display: flex;
+}
+
+.searchCard__applicantsInfo > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.searchCard__block > h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.searchCard__image {
+  object-fit: fill;
+  width: 200px;
+  height: 150px;
+  border: 0px solid black;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.searchCard__info {
+  margin-top: -9px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1;
+}
+
+.searchCard__info > h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.searchCard__info > h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.searchCard__companyInfo {
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+  margin-top: 10px;
+}
+
+.searchCard__companyLogo {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.searchCard__applicantsInfo {
+  display: flex;
+  align-self: flex-end;
+  width: 30%;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.searchCard__description {
+  justify-content: flex-end;
+}
